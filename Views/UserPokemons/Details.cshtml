@@ -1,0 +1,38 @@
+﻿@model PokeList.Models.UserPokemon
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div>
+    <h4>UserPokemon</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TimeStamp)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TimeStamp)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Pokemon)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Pokemon.PokemonName)
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Pokemon.Type)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.User)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.User.UserName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model)
+        </dt>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

@@ -1,0 +1,24 @@
+﻿
+@model PokeList.Models.Pokemon
+
+@{
+    ViewData["Title"] = "Details";
+}
+<div class="box">
+
+
+    <h1 class="pokemontitle">@Html.DisplayFor(model => model.PokemonName)</h1>
+
+    <img class="pokeImage" src=@Html.DisplayFor(model => model.Image)>
+    <h2 class="detailh2">@Html.DisplayFor(model => model.Type) Type</h2>
+    <h5 class="detailh5">@Html.DisplayFor(model => model.PokeDexEntry)</h5>
+
+
+
+
+    <div>
+        <a asp-controller="UserPokemons" asp-action="Create" asp-route-id="@Model.Id">Caught?</a>
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+        <a asp-action="Index">Back to List</a>
+    </div>
+</div>

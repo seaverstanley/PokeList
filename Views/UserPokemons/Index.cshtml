@@ -1,0 +1,27 @@
+﻿@model IEnumerable<PokeList.Models.UserPokemon>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>MyPokèmon</h1>
+<div class="container mt-3">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+
+            <div class="card-body m-3">
+                <div id="PokeCard" class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="@Html.DisplayFor(modelItem => item.Pokemon.Image)" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">@Html.DisplayFor(modelItem => item.TimeStamp)</h5>
+                        <h4 class="card-title">@Html.DisplayFor(modelItem => item.Pokemon.PokemonName)</h4>
+
+                        <p class="card-text">
+                            <a asp-action="Delete" asp-route-id="@item.Id">Release</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+        </div>
+</div>
