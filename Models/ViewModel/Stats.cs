@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RentalManager.Models.ViewModel
+namespace PokeList.Models.ViewModel
     {
         public class Stats
         {

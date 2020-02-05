@@ -195,24 +195,24 @@ namespace PokeList.Controllers
         }
     }
 
-
-
-//    //Stats GET
-public Stats()
-{
-        Stats s = new Stats();
-        s.CaughtPokemon = currentUser.Id
-       // 2.assign two numbers
-       //    --pokemon caught by userId
-       //   -- use.count to find the amount
-
-       //---- - get total # of pokemon in DB and subtract it from the number caught
-
-       // 3.pass the viewmodel into the view.
-
-
-        return View(Stats);
 }
 
-}
+////    //Stats GET
+//public Stats()
+//{
+//        Stats s = new Stats();
+//        s.CaughtPokemon = currentUser.Id
+//       // 2.assign two numbers
+//       //    --pokemon caught by userId
+//       //   -- use.count to find the amount
+
+//       //---- - get total # of pokemon in DB and subtract it from the number caught
+
+//       // 3.pass the viewmodel into the view.
+
+
+//        return View(Stats);
+//}
+
+//}
 
